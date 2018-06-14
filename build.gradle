@@ -34,7 +34,7 @@ dependencies {
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
-
+// to make the change in template files direct effective without re-running the whole program
 bootRun {
 	addResources = true
 }
