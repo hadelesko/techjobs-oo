@@ -12,23 +12,23 @@
     <table th:object="${job}">
         <tr>
             <td><b th:text="Name"></b></td>
-            <td th:text="${name}"></td>
+            <td th:text="*{name}"></td>
         </tr>
         <tr>
-            <td><b th:text="Employer"></b></td>
-            <td th:text="${employerName}"></td>
+            <td><b th:object="${Employer}">Employer</b></td>
+            <td th:text="*{employer}"></td>
         </tr>
         <tr>
             <td><b th:text="Location"></b></td>
-            <td th:text="${location}"></td>
+            <td th:text="*{location}"></td>
         </tr>
         <tr>
             <td><b th:text="PositionType"></b></td>
-            <td th:text="${positionType}"></td>
+            <td th:text="*{positionType}"></td>
         </tr>
         <tr>
             <td><b th:text="Skill"></b></td>
-            <td th:text="${coreCompetency}"></td>
+            <td th:text="*{coreCompetency}"></td>
         </tr>
     </table>
 
