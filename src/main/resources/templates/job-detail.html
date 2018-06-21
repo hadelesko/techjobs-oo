@@ -14,8 +14,8 @@
             <td><b th:text="Name"></b></td>
             <td th:text="*{name}"></td>
         </tr>
-        <tr>
-            <td><b th:object="${Employer}">Employer</b></td>
+        <tr th:object="${job}">
+            <td><b th:text="Employer"></b></td>
             <td th:text="*{employer}"></td>
         </tr>
         <tr>
